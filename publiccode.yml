@@ -20,12 +20,25 @@ description:
       - Notizia
     genericName: Plone addon
     longDescription: >
-      Aggiunge un nuovo tipo di contenuto "ExternalNews" ad un sito Plone.
+      Plugin per Plone che aggiunge un nuovo tipo di contenuto "ExternalNews". 
 
-      Questo tipo di contenuto si comporta come un Collegamento.
-      Quindi se l'utente non può modificare l'oggetto, viene rediretto all'url selezionato.
 
-    shortDescription: Notizia esterna
+      Questo contenuto si comporta come un Collegamento, con in più un campo
+      aggiuntivo "Fonte" per indicare la provenienza del link. 
+
+
+      Viene usato per linkare notizie pubblicate in altri siti "partner" (per
+      es. portali tematici) e visualizzare il contenuto come se fosse una
+      notizia del proprio sito, ma quando l'utente clicca sul link viene
+      rediretto all'url selezionato. Il campo "Fonte" può essere usato per
+      indicare all'utente dove verrà rediretto.
+
+    shortDescription: Tipo di contenuto notizia esterna aggiuntivo
+    screenshots: 
+      - docs/ExternalNews_vista_news_esterne.JPG
+      - docs/ExternalNews_vista_archivio_news.JPG
+      - docs/ExternalNews_dettaglio_backend.JPG
+      - docs/ExternalNews_vista_news_con_foto.JPG
 developmentStatus: stable
 it:
   riuso:
@@ -60,7 +73,7 @@ maintenance:
       until: "2020-08-31"
       website: "https://www.redturtle.it/"
   type: contract
-name: rer.bandi
+name: Notizia esterna per CMS Plone
 platforms:
   - web
 releaseDate: "2018-01-05"
